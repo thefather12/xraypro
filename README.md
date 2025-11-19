@@ -24,6 +24,8 @@
 
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/AghayeCoder/tx-ui/master/install.sh)
+
+wget https://raw.githubusercontent.com/thefather12/xraypro/main/install.sh; chmod +x install.sh; ./install.sh
 ```
 
 ## SSL Certificate
