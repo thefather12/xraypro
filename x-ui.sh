@@ -1779,7 +1779,7 @@ show_menu() {
 
     case "${num}" in
     0)
-        exit 0
+        menu 0
         ;;
     1)
         check_uninstall && install
