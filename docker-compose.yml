@@ -1,0 +1,14 @@
+services:
+  tx-ui:
+    image: ghcr.io/aghayecoder/tx-ui:latest
+    container_name: tx-ui
+    hostname: yourhostname
+    volumes:
+      - $PWD/db/:/etc/x-ui/
+      - $PWD/cert/:/root/cert/
+    environment:
+      XRAY_VMESS_AEAD_FORCED: "false"
+      X_UI_ENABLE_FAIL2BAN: "true"
+    tty: true
+    network_mode: host
+    restart: unless-stopped
